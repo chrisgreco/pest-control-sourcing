@@ -6,7 +6,8 @@ export interface Listing {
   revenue: number;
   cashFlow: number; // SDE or EBITDA
   ebitdaMargin: number;
-  multiple: number;
+  multiple: number; // EBITDA multiple (askingPrice / cashFlow)
+  revenueMultiple: number; // Revenue multiple (askingPrice / revenue)
   location: string;
   state: string;
   employees: number;

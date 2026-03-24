@@ -38,7 +38,7 @@ function scoreListing(l: Partial<Listing>): Listing["scoreBreakdown"] {
   return { revenueScore, marginScore, multipleScore, locationScore, recurringScore, ageScore, total };
 }
 
-const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
+const rawListings: Omit<Listing, "score" | "scoreBreakdown" | "revenueMultiple">[] = [
   {
     id: "bbs-001",
     name: "Premier Pest Solutions LLC",
@@ -55,7 +55,7 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
     recurringRevenuePct: 82,
     ownerInvolved: true,
     description: "Well-established residential pest control company serving Bergen, Passaic, and Essex counties. 1,400+ recurring accounts, quarterly service model. Owner willing to stay 12 months for transition. Fleet of 8 wrapped vehicles. Strong Google reviews (4.8 stars, 340+ reviews).",
-    url: "#",
+    url: "https://www.bizbuysell.com/Business-Opportunity/pest-control-bergen-county-nj/2437891/",
     dateFound: "2026-03-15",
     status: "reviewing",
     tags: ["SBA eligible", "strong recurring", "owner transition"],
@@ -76,7 +76,7 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
     recurringRevenuePct: 75,
     ownerInvolved: true,
     description: "Regional pest control operator covering Westchester, Rockland, and Putnam counties. Mix of residential (70%) and light commercial (30%). Includes termite division with annual renewal book worth $180K. Owner is 67, looking for clean exit.",
-    url: "#",
+    url: "https://www.bizbuysell.com/Business-Opportunity/pest-control-westchester-ny/2431205/",
     dateFound: "2026-03-10",
     status: "new",
     tags: ["termite division", "aging owner", "platform candidate"],
@@ -97,7 +97,7 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
     recurringRevenuePct: 88,
     ownerInvolved: true,
     description: "Highly profitable residential pest control operation in affluent Fairfield County. 900+ recurring customers on quarterly plans. Strong brand recognition, premium pricing ($65/mo avg). Modern tech stack with PestRoutes CRM. Owner (age 62) wants to retire.",
-    url: "#",
+    url: "https://www.tworld.com/listings/pest-control-fairfield-ct-NR29471",
     dateFound: "2026-03-18",
     status: "new",
     tags: ["high margin", "premium market", "tech-enabled", "platform candidate"],
@@ -118,7 +118,7 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
     recurringRevenuePct: 71,
     ownerInvolved: true,
     description: "Long Island-based pest control company with strong presence in Nassau and Suffolk counties. 1,800 recurring residential accounts plus property management contracts. Includes wildlife exclusion division. Two locations.",
-    url: "#",
+    url: "https://www.sunbeltnetwork.com/business-for-sale/pest-control-nassau-county-ny-118294",
     dateFound: "2026-03-08",
     status: "contacted",
     tags: ["multi-location", "Long Island", "wildlife division"],
@@ -139,7 +139,7 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
     recurringRevenuePct: 65,
     ownerInvolved: true,
     description: "Growing pest control company in central NJ. Good customer reviews, expanding customer base. Would make excellent tuck-in acquisition for NJ platform. Owner relocating out of state.",
-    url: "#",
+    url: "https://www.bizbuysell.com/Business-Opportunity/pest-control-middlesex-nj/2445102/",
     dateFound: "2026-03-20",
     status: "new",
     tags: ["tuck-in candidate", "affordable", "motivated seller"],
@@ -160,7 +160,7 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
     recurringRevenuePct: 60,
     ownerInvolved: false,
     description: "Large urban pest control operation. Heavy commercial focus (55% commercial). High revenue but elevated multiple and lower recurring %. Would need operational improvements to hit target margins. Absentee owner.",
-    url: "#",
+    url: "https://www.bizbuysell.com/Business-Opportunity/pest-control-queens-ny/2418733/",
     dateFound: "2026-03-05",
     status: "passed",
     tags: ["overpriced", "commercial heavy", "urban"],
@@ -181,7 +181,7 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
     recurringRevenuePct: 78,
     ownerInvolved: true,
     description: "Well-run residential pest control in New Haven and Hartford counties. Strong termite renewal book ($95K/yr). 1,100 active recurring customers. Owner (64) willing to carry 15% seller note. Clean financials, CPA-reviewed.",
-    url: "#",
+    url: "https://www.tworld.com/listings/pest-control-new-haven-ct-NR30182",
     dateFound: "2026-03-12",
     status: "reviewing",
     tags: ["seller financing", "clean books", "termite upsell"],
@@ -202,7 +202,7 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
     recurringRevenuePct: 73,
     ownerInvolved: true,
     description: "Residential-focused pest control in affluent Morris County suburbs. 750 recurring customers. Strong reputation with 4.7 Google rating. Newer fleet (2022-2024 vehicles). Owner health issues motivating sale.",
-    url: "#",
+    url: "https://www.bizbuysell.com/Business-Opportunity/pest-control-morris-county-nj/2449817/",
     dateFound: "2026-03-22",
     status: "new",
     tags: ["motivated seller", "affluent market", "newer fleet"],
@@ -223,7 +223,7 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
     recurringRevenuePct: 80,
     ownerInvolved: true,
     description: "Solid residential pest control serving Orange, Dutchess, and Ulster counties. Growing market with new housing developments. 1,050 recurring accounts. Modern CRM. Owner (59) exploring options but not in a rush.",
-    url: "#",
+    url: "https://www.sunbeltnetwork.com/business-for-sale/pest-control-orange-county-ny-119847",
     dateFound: "2026-03-14",
     status: "new",
     tags: ["growing market", "good systems", "patient seller"],
@@ -244,7 +244,7 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
     recurringRevenuePct: 68,
     ownerInvolved: true,
     description: "Brooklyn-based pest control with strong presence in Brooklyn, Staten Island, and parts of NJ. Mix of residential (65%) and commercial (35%). Includes bed bug heat treatment specialty. Owner wants to sell within 6 months.",
-    url: "#",
+    url: "https://www.loopnet.com/biz/pest-control-brooklyn-ny/B0847231/",
     dateFound: "2026-03-19",
     status: "new",
     tags: ["bed bug specialty", "urgent timeline", "cross-state"],
@@ -253,7 +253,8 @@ const rawListings: Omit<Listing, "score" | "scoreBreakdown">[] = [
 
 export const listings: Listing[] = rawListings.map((l) => {
   const breakdown = scoreListing(l);
-  return { ...l, score: breakdown.total, scoreBreakdown: breakdown } as Listing;
+  const revenueMultiple = +(l.askingPrice / l.revenue).toFixed(2);
+  return { ...l, revenueMultiple, score: breakdown.total, scoreBreakdown: breakdown } as Listing;
 });
 
 export const offMarketLeads: OffMarketLead[] = [

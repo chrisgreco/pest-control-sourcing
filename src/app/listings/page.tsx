@@ -15,7 +15,7 @@ import {
   ChevronUp,
 } from "lucide-react";
 
-type SortKey = "score" | "revenue" | "askingPrice" | "multiple" | "ebitdaMargin" | "recurringRevenuePct";
+type SortKey = "score" | "revenue" | "askingPrice" | "multiple" | "revenueMultiple" | "ebitdaMargin" | "recurringRevenuePct";
 
 export default function ListingsPage() {
   const [search, setSearch] = useState("");
@@ -112,8 +112,11 @@ export default function ListingsPage() {
                 <th className="text-right py-3 px-4 font-medium cursor-pointer select-none" onClick={() => toggleSort("askingPrice")}>
                   Asking <SortIcon col="askingPrice" />
                 </th>
+                <th className="text-right py-3 px-4 font-medium cursor-pointer select-none" onClick={() => toggleSort("revenueMultiple")}>
+                  Rev Mult <SortIcon col="revenueMultiple" />
+                </th>
                 <th className="text-right py-3 px-4 font-medium cursor-pointer select-none" onClick={() => toggleSort("multiple")}>
-                  Multiple <SortIcon col="multiple" />
+                  EBITDA Mult <SortIcon col="multiple" />
                 </th>
                 <th className="text-right py-3 px-4 font-medium cursor-pointer select-none" onClick={() => toggleSort("ebitdaMargin")}>
                   EBITDA % <SortIcon col="ebitdaMargin" />
@@ -122,6 +125,7 @@ export default function ListingsPage() {
                   Recurring % <SortIcon col="recurringRevenuePct" />
                 </th>
                 <th className="text-left py-3 px-4 font-medium">Status</th>
+                <th className="text-center py-3 px-4 font-medium">Link</th>
               </tr>
             </thead>
             <tbody>
@@ -151,6 +155,9 @@ export default function ListingsPage() {
                       ${(deal.askingPrice / 1_000_000).toFixed(2)}M
                     </td>
                     <td className="py-3 px-4 text-right font-mono">
+                      {deal.revenueMultiple.toFixed(2)}x
+                    </td>
+                    <td className="py-3 px-4 text-right font-mono">
                       <MultipleColor val={deal.multiple} />
                     </td>
                     <td className="py-3 px-4 text-right font-mono">
@@ -162,10 +169,22 @@ export default function ListingsPage() {
                     <td className="py-3 px-4">
                       <StatusBadge status={deal.status} />
                     </td>
+                    <td className="py-3 px-4 text-center">
+                      <a
+                        href={deal.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center justify-center w-8 h-8 rounded-lg hover:bg-[var(--accent)]/10 text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
+                        title={`View on ${deal.source === "bizbuysell" ? "BizBuySell" : deal.source === "transworld" ? "Transworld" : deal.source === "sunbelt" ? "Sunbelt" : "LoopNet"}`}
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    </td>
                   </tr>
                   {expanded === deal.id && (
                     <tr key={`${deal.id}-detail`} className="bg-[var(--background)]">
-                      <td colSpan={9} className="p-6">
+                      <td colSpan={11} className="p-6">
                         <DealDetail deal={deal} />
                       </td>
                     </tr>
