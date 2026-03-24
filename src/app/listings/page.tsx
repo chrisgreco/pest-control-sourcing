@@ -176,7 +176,7 @@ export default function ListingsPage() {
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
                         className="inline-flex items-center justify-center w-8 h-8 rounded-lg hover:bg-[var(--accent)]/10 text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
-                        title={`View on ${deal.source === "bizbuysell" ? "BizBuySell" : deal.source === "transworld" ? "Transworld" : deal.source === "sunbelt" ? "Sunbelt" : "LoopNet"}`}
+                        title={`View on ${deal.source === "bizbuysell" ? "BizBuySell" : deal.source === "transworld" ? "Transworld" : deal.source === "sunbelt" ? "Sunbelt" : deal.source === "loopnet" ? "LoopNet" : "Source"}`}
                       >
                         <ExternalLink className="w-4 h-4" />
                       </a>
