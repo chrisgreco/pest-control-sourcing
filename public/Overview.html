@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Niche Roll-Up Opportunities | Small Business Consolidation Playbook</title>
+<style>
+:root {
+  --bg-primary: #0f1219;
+  --bg-secondary: #161b26;
+  --bg-card: #1c2233;
+  --bg-card-hover: #222940;
+  --border: #2a3148;
+  --text-primary: #e8eaf0;
+  --text-secondary: #9ba3b5;
+  --text-muted: #6b7280;
+  --accent-1: #4f8cff;
+  --accent-1-dim: rgba(79,140,255,0.12);
+  --accent-2: #34d399;
+  --accent-2-dim: rgba(52,211,153,0.12);
+  --accent-3: #f59e0b;
+  --accent-3-dim: rgba(245,158,11,0.12);
+  --accent-4: #a78bfa;
+  --accent-4-dim: rgba(167,139,250,0.12);
+  --accent-5: #f472b6;
+  --accent-5-dim: rgba(244,114,182,0.12);
+  --red: #ef4444;
+  --green: #22c55e;
+  --yellow: #eab308;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ── Sticky Nav ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15,18,25,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+}
+nav .nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 12px 0;
+}
+nav .nav-inner::-webkit-scrollbar { display: none; }
+nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+nav a:hover, nav a.active { background: var(--bg-card); color: var(--text-primary); }
+nav .brand {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-right: 16px;
+  letter-spacing: -0.3px;
+}
+
+/* ── Layout ── */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.hero {
+  padding: 64px 0 40px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #e8eaf0 0%, #9ba3b5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero .subtitle {
+  color: var(--text-secondary);
+  font-size: 17px;
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+.hero .pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.hero .pill {
+  font-size: 12px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+/* ── Section ── */
+section { padding: 48px 0; }
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+h2.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 32px;
+}
+
+/* ── Executive Summary Table ── */
+.exec-table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+}
+.exec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  min-width: 900px;
+}
+.exec-table thead th {
+  background: var(--bg-card);
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.exec-table tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.exec-table tbody tr:last-child td { border-bottom: none; }
+.exec-table tbody tr:hover { background: var(--bg-card); }
+.exec-table .niche-name { font-weight: 600; white-space: nowrap; }
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+.badge-low { background: rgba(34,197,94,0.15); color: var(--green); }
+.badge-med { background: rgba(234,179,8,0.15); color: var(--yellow); }
+.badge-high { background: rgba(239,68,68,0.15); color: var(--red); }
+
+/* ── Niche Cards ── */
+.niche-header {
+  padding: 40px 0 24px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 32px;
+}
+.niche-header .niche-number {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.niche-header h2 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+.niche-header .tagline {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.subsection {
+  margin-bottom: 40px;
+}
+.subsection h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.subsection h3 .icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.info-card .label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.info-card .value {
+  font-size: 22px;
+  font-weight: 700;
+}
+.info-card .detail {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+p { margin-bottom: 14px; color: var(--text-secondary); }
+p strong { color: var(--text-primary); }
+
+ul, ol {
+  margin: 0 0 16px 20px;
+  color: var(--text-secondary);
+}
+li { margin-bottom: 6px; }
+li strong { color: var(--text-primary); }
+
+/* ── Timeline ── */
+.timeline {
+  position: relative;
+  padding-left: 28px;
+  margin: 16px 0 24px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: var(--border);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-1);
+  background: var(--bg-primary);
+}
+.timeline-item .year-label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.timeline-item p { margin-bottom: 0; font-size: 14px; }
+
+/* ── Risk / Success boxes ── */
+.callout {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+  border-left: 3px solid;
+}
+.callout-green { background: rgba(34,197,94,0.06); border-color: var(--green); }
+.callout-red { background: rgba(239,68,68,0.06); border-color: var(--red); }
+.callout-blue { background: rgba(79,140,255,0.06); border-color: var(--accent-1); }
+.callout-yellow { background: rgba(234,179,8,0.06); border-color: var(--yellow); }
+.callout h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.callout ul { margin-bottom: 0; }
+
+/* ── Economics Table ── */
+.econ-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 16px 0;
+  background: var(--bg-card);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.econ-table th {
+  background: var(--bg-secondary);
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-secondary);
+}
+.econ-table td {
+  padding: 10px 16px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--text-muted);
+  font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── Color accents per niche ── */
+.niche-1 .niche-number, .niche-1 h2 { color: var(--accent-1); }
+.niche-1 .timeline-item::before { border-color: var(--accent-1); }
+.niche-1 .subsection h3 .icon { background: var(--accent-1-dim); color: var(--accent-1); }
+
+.niche-2 .niche-number, .niche-2 h2 { color: var(--accent-2); }
+.niche-2 .timeline-item::before { border-color: var(--accent-2); }
+.niche-2 .subsection h3 .icon { background: var(--accent-2-dim); color: var(--accent-2); }
+
+.niche-3 .niche-number, .niche-3 h2 { color: var(--accent-3); }
+.niche-3 .timeline-item::before { border-color: var(--accent-3); }
+.niche-3 .subsection h3 .icon { background: var(--accent-3-dim); color: var(--accent-3); }
+
+.niche-4 .niche-number, .niche-4 h2 { color: var(--accent-4); }
+.niche-4 .timeline-item::before { border-color: var(--accent-4); }
+.niche-4 .subsection h3 .icon { background: var(--accent-4-dim); color: var(--accent-4); }
+
+.niche-5 .niche-number, .niche-5 h2 { color: var(--accent-5); }
+.niche-5 .timeline-item::before { border-color: var(--accent-5); }
+.niche-5 .subsection h3 .icon { background: var(--accent-5-dim); color: var(--accent-5); }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .container { padding: 0 16px; }
+  .hero { padding: 40px 0 24px; }
+  .niche-header h2 { font-size: 24px; }
+  .info-grid { grid-template-columns: 1fr; }
+  nav .nav-inner { gap: 4px; }
+  nav a { font-size: 12px; padding: 5px 10px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <span class="brand">Roll-Up Playbook</span>
+    <a href="#summary">Summary</a>
+    <a href="#niche1">Pest Control</a>
+    <a href="#niche2">Commercial Cleaning</a>
+    <a href="#niche3">Pool Service</a>
+    <a href="#niche4">Landscaping</a>
+    <a href="#niche5">Garage Doors</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<div class="container">
+  <div class="hero">
+    <h1>Niche Roll-Up Opportunities for<br>First-Time Acquirers</h1>
+    <p class="subtitle">A deep-dive playbook mapping five fragmented, AI-resistant service niches where $500K&ndash;$2M in initial equity can compound into a $15M+ revenue platform within five years.</p>
+    <div class="pills">
+      <span class="pill">$500K &ndash; $2M Initial Equity</span>
+      <span class="pill">SBA 7(a) Eligible</span>
+      <span class="pill">AI-Resistant</span>
+      <span class="pill">5-Year Horizon</span>
+      <span class="pill">Hands-On Operators</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ EXECUTIVE SUMMARY ═══════════════════════ -->
+  <section id="summary">
+    <h2 class="section-title">Executive Summary</h2>
+    <div class="exec-table-wrap">
+      <table class="exec-table">
+        <thead>
+          <tr>
+            <th>Niche</th>
+            <th>Initial Capital</th>
+            <th>Time to $15M Rev</th>
+            <th>AI Displacement Risk</th>
+            <th>PE Saturation</th>
+            <th>Operational Complexity</th>
+            <th>Franchise Optionality</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="niche-name" style="color:var(--accent-1)">&#x1f41b; Residential Pest Control</td>
+            <td>$800K &ndash; $1.5M</td>
+            <td>4 &ndash; 5 Years</td>
+            <td><span class="badge badge-low">Low</span></td>
+            <td><span class="badge badge-med">Med-High</span></td>
+            <td><span class="badge badge-low">Low</span></td>
+            <td><span class="badge badge-high">Strong</span></td>
+          </tr>
+          <tr>
+            <td class="niche-name" style="color:var(--accent-2)">&#x1f9f9; Commercial Janitorial</td>
+            <td>$500K &ndash; $1.2M</td>
+            <td>3 &ndash; 4 Years</td>
+            <td><span class="badge badge-low">Low</span></td>
+            <td><span class="badge badge-low">Low</span></td>
+            <td><span class="badge badge-med">Medium</span></td>
+            <td><span class="badge badge-med">Moderate</span></td>
+          </tr>
+          <tr>
+            <td class="niche-name" style="color:var(--accent-3)">&#x1f3ca; Pool Service &amp; Maintenance</td>
+            <td>$600K &ndash; $1.3M</td>
+            <td>4 &ndash; 5 Years</td>
+            <td><span class="badge badge-low">Low</span></td>
+            <td><span class="badge badge-med">Moderate</span></td>
+            <td><span class="badge badge-low">Low</span></td>
+            <td><span class="badge badge-high">Strong</span></td>
+          </tr>
+          <tr>
+            <td class="niche-name" style="color:var(--accent-4)">&#x1f333; Commercial Landscaping</td>
+            <td>$900K &ndash; $1.8M</td>
+            <td>3 &ndash; 5 Years</td>
+            <td><span class="badge badge-low">Low</span></td>
+            <td><span class="badge badge-med">Medium</span></td>
+            <td><span class="badge badge-med">Medium</span></td>
+            <td><span class="badge badge-med">Moderate</span></td>
+          </tr>
+          <tr>
+            <td class="niche-name" style="color:var(--accent-5)">&#x1f6aa; Garage Door Services</td>
+            <td>$700K &ndash; $1.5M</td>
+            <td>4 &ndash; 5 Years</td>
+            <td><span class="badge badge-low">Low</span></td>
+            <td><span class="badge badge-low">Low</span></td>
+            <td><span class="badge badge-med">Medium</span></td>
+            <td><span class="badge badge-med">Moderate</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:24px;">
+      <p><strong>Why These Five?</strong> Each niche shares a critical set of characteristics: the core value delivery requires a human physically showing up, recurring or repeat revenue is structurally embedded, the market is hyper-fragmented with thousands of owner-operators nearing retirement, and acquisition multiples remain reasonable (3&ndash;5x EBITDA) below the threshold where institutional capital competes. AI and software become margin enhancers&mdash;route optimization, automated scheduling, predictive maintenance&mdash;rather than substitutes for the work itself.</p>
+      <p><strong>The Playbook:</strong> Acquire a single platform business with SBA 7(a) leverage and seller financing, professionalize operations over 12&ndash;18 months, then execute tuck-in acquisitions to build density in a single metro before expanding geographically. Each niche offers a credible path to $15M+ revenue within five years and an eventual exit to a strategic acquirer or larger PE fund at 7&ndash;10x EBITDA.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════ NICHE 1: PEST CONTROL ═══════════════════════ -->
+  <section id="niche1" class="niche-1">
+    <div class="niche-header">
+      <div class="niche-number">Niche 01</div>
+      <h2>Residential Pest Control</h2>
+      <div class="tagline">Recurring revenue, extreme fragmentation, and a biological moat no algorithm can replace</div>
+    </div>
+
+    <!-- 1. The Opportunity -->
+    <div class="subsection">
+      <h3><span class="icon">&#x1f50d;</span> The Opportunity</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">US Market Size</div>
+          <div class="value">~$25&ndash;$29B</div>
+          <div class="detail">Growing at 5&ndash;6% annually driven by climate change, urbanization, and heightened health awareness (IBISWorld 2025&ndash;2026)</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Fragmentation</div>
+          <div class="value">~33,100 firms</div>
+          <div class="detail">Top 10 players hold roughly 35&ndash;40% market share; the remaining 60%+ is owner-operators doing $300K&ndash;$5M</div>
+        </div>
+        <div class="info-card">
+          <div class="label">PE Penetration</div>
+          <div class="value">High at Top, Open Below $5M</div>
+          <div class="detail">Rollins (32 deals/$106M in 2024), Anticimex (400+ acquisitions since 2012, 40&ndash;50/yr), Rentokil (57 acquisitions tracked). But activity concentrates above $5M revenue&mdash;enormous white space below.</div>
+        </div>
+      </div>
+      <p><strong>Why pest control and not general extermination + wildlife removal?</strong> Pure residential pest control (ants, roaches, termites, mosquitoes, rodents) offers the highest recurring revenue density. Wildlife removal is project-based and seasonal. Termite work requires specialized licensing but carries premium margins. The sweet spot is a recurring quarterly/bi-monthly service model with termite upsell capability.</p>
+      <p><strong>The AI moat is absolute:</strong> A technician must physically enter the home, inspect crawl spaces, identify pest species, apply chemical treatments, and set bait stations. No drone, robot, or software can replace this. Meanwhile, AI tools supercharge the business&mdash;route optimization, automated re-service scheduling, and image-based pest identification for faster diagnosis.</p>
+    </div>
+
+    <!-- 2. Target Geography -->
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4cd;</span> Target Geography &amp; End-Market</h3>
+      <p><strong>Ideal first market:</strong> Sun Belt Tier 2/3 metros with year-round pest pressure. Think <strong>Tampa/St. Petersburg, FL</strong>, <strong>Charlotte, NC</strong>, <strong>San Antonio, TX</strong>, <strong>Nashville, TN</strong>, or <strong>Raleigh-Durham, NC</strong>. These markets have strong population growth, warm climates (more bugs), and large bases of single-family homes.</p>
+      <p><strong>Customer mix:</strong> 85% residential, 15% light commercial (restaurants, property management companies). Residential is the bread and butter&mdash;high volume, recurring, and predictable. Commercial adds density on existing routes.</p>
+      <ul>
+        <li><strong>Contract structure:</strong> Recurring quarterly or bi-monthly service agreements, typically $40&ndash;$60/month residential. Annual contract values of $480&ndash;$720 per home.</li>
+        <li><strong>Retention rates:</strong> 80&ndash;85% annual retention on recurring contracts. Industry-leading operators achieve 88%+.</li>
+        <li><strong>Termite work:</strong> One-time treatments ($800&ndash;$2,500) plus annual renewal inspections ($150&ndash;$300). High margin, high retention.</li>
+      </ul>
+    </div>
+
+    <!-- 3. Acquisition Playbook -->
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4cb;</span> Acquisition Playbook</h3>
+      <p><strong>Ideal platform acquisition:</strong></p>
+      <ul>
+        <li><strong>Revenue:</strong> $1M&ndash;$3M (large enough to support a GM hire, small enough to buy at reasonable multiples)</li>
+        <li><strong>EBITDA margin:</strong> 15&ndash;22% ($150K&ndash;$660K of cash flow)</li>
+        <li><strong>Owner situation:</strong> Founder aged 55&ndash;70 looking to retire within 1&ndash;2 years. Ideally willing to stay on for 6&ndash;12 month transition.</li>
+        <li><strong>Employee count:</strong> 8&ndash;20 technicians, 1&ndash;2 office staff</li>
+        <li><strong>Customer base:</strong> 800&ndash;2,500+ recurring accounts</li>
+      </ul>
+      <p><strong>Purchase multiples:</strong> Expect 3.0&ndash;4.5x EBITDA for businesses in this range. Businesses with strong recurring revenue and documented processes command the high end. Distressed or owner-dependent businesses trade at 2.5&ndash;3.0x.</p>
+
+      <table class="econ-table">
+        <tr><th>Deal Component</th><th>Typical Terms</th></tr>
+        <tr><td>SBA 7(a) Loan</td><td>Up to $5M (max guarantee $3.75M). 10-year term for acquisitions. Rates: 9.75&ndash;14.75% variable (Prime + spread). Requires 10% equity injection (as of June 2025 rule change). Covers goodwill.</td></tr>
+        <tr><td>Seller Financing</td><td>10&ndash;30% of purchase price. 3&ndash;5 year term at 6&ndash;10% interest. <strong>Caution:</strong> Post-June 2025 SBA rules limit seller notes to 50% of equity injection on full standby&mdash;reduces seller willingness to offer alongside SBA.</td></tr>
+        <tr><td>Equity Required</td><td>10% of total purchase price (new SBA minimum). On a $1.5M deal, that's $150K cash minimum.</td></tr>
+        <tr><td>Earnout</td><td>5&ndash;15% tied to customer retention at 12 months post-close. Aligns seller incentives.</td></tr>
+      </table>
+
+      <p><strong>Sourcing deals:</strong> Business brokers (BizBuySell, Transworld, Sunbelt Network), direct mail campaigns to licensed pest control operators aged 60+, state pest control association membership directories, attending NPMA (National Pest Management Association) regional events, and building relationships with local SBA lenders who see these deals regularly.</p>
+      <p><strong>Acquisitions to reach critical mass:</strong> 1 platform + 2&ndash;4 tuck-ins in the same metro within 24 months to reach $5M+ revenue and become the clear #2 or #3 local player.</p>
+    </div>
+
+    <!-- 4. Path to Scale -->
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4c8;</span> Path to Scale</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-1)">Year 1 &mdash; Acquire &amp; Stabilize</div>
+          <p>Close platform acquisition ($1.5&ndash;$2.5M revenue). Retain all existing technicians and key customers. Implement modern CRM/routing software (PestRoutes, FieldRoutes, or Briostack). Establish centralized scheduling and billing. Owner-operators work in the business 50+ hrs/week learning operations. Build SOPs for every service type.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-1)">Year 2 &mdash; Density &amp; First Tuck-ins</div>
+          <p>Complete 1&ndash;2 tuck-in acquisitions in the same metro ($500K&ndash;$1.5M revenue each). Consolidate onto single technology platform. Launch unified brand with wrapped vehicles. Hire first non-owner operations manager. Revenue target: $4&ndash;$6M. Begin standardized sales training program for technicians.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-1)">Year 3 &mdash; Optimize &amp; Expand</div>
+          <p>EBITDA margins should reach 20&ndash;25% through route density and overhead leverage. Complete 1&ndash;2 more tuck-ins or expand to adjacent metro. Hire dedicated sales team. Launch digital marketing engine (local SEO, Google LSA, review management). Revenue target: $8&ndash;$10M.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-1)">Year 4 &mdash; Multi-Market Platform</div>
+          <p>Enter 1&ndash;2 new metros through acquisition. Install local GMs in each market. Centralize back-office (accounting, HR, marketing, call center) at HQ. Build technician training academy. Revenue target: $12&ndash;$15M.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-1)">Year 5 &mdash; Exit Optionality</div>
+          <p>Revenue: $15&ndash;$20M. EBITDA: $3&ndash;$5M. The business is now attractive to mid-market PE firms, strategic acquirers (Rentokil, Rollins, Anticimex), or franchise conversion. Alternatively, continue compounding. Evaluate franchise model for asset-light expansion.</p>
+        </div>
+      </div>
+      <p><strong>Franchise optionality:</strong> Pest control has proven franchise models (Truly Nolen, ABC, Turner Pest Control). Converting to a franchise model makes sense at $15M+ revenue with 3+ markets, documented training systems, and a recognizable regional brand. Requires FDD (Franchise Disclosure Document) preparation, legal compliance with FTC Rule, and 12&ndash;18 months of setup.</p>
+    </div>
+
+    <!-- 5. Economics -->
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4b0;</span> Economics</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">Gross Margin</div>
+          <div class="value">50&ndash;60%</div>
+          <div class="detail">Chemical costs are 8&ndash;12% of revenue; labor (techs) is 30&ndash;35%</div>
+        </div>
+        <div class="info-card">
+          <div class="label">EBITDA Margin (at scale)</div>
+          <div class="value">20&ndash;28%</div>
+          <div class="detail">Best-in-class operators reach 28%+ with dense routes and recurring mix above 75%</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Revenue per Technician</div>
+          <div class="value">$150K&ndash;$220K</div>
+          <div class="detail">Loaded cost per tech: $55K&ndash;$75K (wages + vehicle + chemicals)</div>
+        </div>
+      </div>
+      <table class="econ-table">
+        <tr><th>Metric</th><th>Year 1</th><th>Year 3</th><th>Year 5</th></tr>
+        <tr><td>Revenue</td><td>$2.0M</td><td>$8.5M</td><td>$17M</td></tr>
+        <tr><td>EBITDA</td><td>$340K (17%)</td><td>$1.9M (22%)</td><td>$4.3M (25%)</td></tr>
+        <tr><td>Cumulative Equity Invested</td><td>$400K</td><td>$1.2M</td><td>$1.8M</td></tr>
+        <tr><td>Cumulative Debt</td><td>$1.2M</td><td>$3.5M</td><td>$5.0M</td></tr>
+        <tr><td>Enterprise Value (est.)</td><td>$1.7M (5x)</td><td>$11.4M (6x)</td><td>$30&ndash;$39M (7&ndash;9x)</td></tr>
+      </table>
+      <p><strong>Return profile:</strong> Entry at 3.5&ndash;4.0x EBITDA, exit at 7&ndash;9x EBITDA (strategic premium for scale + recurring revenue). Estimated equity IRR of 45&ndash;65% over 5 years, driven primarily by multiple expansion and EBITDA growth. Total equity multiple on invested capital: 8&ndash;15x.</p>
+      <p><strong>Realistic exit buyers:</strong> Rentokil/Terminix (acquiring aggressively in the $10M&ndash;$50M revenue range), Anticimex, mid-market PE platforms (like Hawx Pest Control, which has raised institutional capital), or regional strategics looking to enter new geographies.</p>
+    </div>
+
+    <!-- 6. What Makes or Breaks It -->
+    <div class="subsection">
+      <h3><span class="icon">&#x26a1;</span> What Makes or Breaks It</h3>
+      <div class="callout callout-green">
+        <h4>Must Get Right</h4>
+        <ul>
+          <li><strong>Technician retention:</strong> Your business walks out the door every night. Pay above market, create career ladders (tech → senior tech → route manager → branch manager), and invest in training. Losing a seasoned tech means losing their customer relationships.</li>
+          <li><strong>Customer retention above 82%:</strong> This is the single most important KPI. Below 80%, you're on a treadmill. Implement proactive service quality callbacks, automated satisfaction surveys, and rapid re-service protocols.</li>
+          <li><strong>Route density:</strong> Profitability is a function of stops per day. Target 12&ndash;16 stops per tech per day. Acquire businesses in the same metro, not scattered across regions. Every tuck-in should increase average route density.</li>
+        </ul>
+      </div>
+      <div class="callout callout-red">
+        <h4>Biggest Risks &amp; Mitigations</h4>
+        <ul>
+          <li><strong>Regulatory risk:</strong> Pesticide licensing varies by state and requires ongoing CE credits. Mitigation: Hire a compliance manager early or outsource to a pest control consulting firm. Ensure all techs maintain current licenses.</li>
+          <li><strong>Customer concentration in acquired books:</strong> Some small operators get 30%+ revenue from a single property management company. Mitigation: Diligence customer concentration rigorously; walk away from any deal with &gt;15% concentration.</li>
+          <li><strong>Integration failure:</strong> Acquired techs may leave if culture changes too fast. Mitigation: Keep the prior owner on for transition, don't change compensation structures in the first 90 days, rebrand gradually.</li>
+        </ul>
+      </div>
+      <div class="callout callout-blue">
+        <h4>AI as Margin Enhancer</h4>
+        <ul>
+          <li><strong>Route optimization software</strong> (e.g., WorkWave, OptimoRoute) can increase stops per day by 15&ndash;25%, directly boosting revenue per tech.</li>
+          <li><strong>AI-powered scheduling</strong> reduces no-shows and optimizes appointment windows, improving customer satisfaction and tech utilization.</li>
+          <li><strong>Predictive pest modeling</strong> (using weather, geography, and historical data) enables proactive outreach to customers before infestations occur, reducing churn.</li>
+          <li><strong>Automated review solicitation &amp; response</strong> tools drive local SEO rankings and new customer acquisition at near-zero marginal cost.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════ NICHE 2: COMMERCIAL JANITORIAL ═══════════════════════ -->
+  <section id="niche2" class="niche-2">
+    <div class="niche-header">
+      <div class="niche-number">Niche 02</div>
+      <h2>Commercial Janitorial Services</h2>
+      <div class="tagline">The fastest path to $15M revenue &mdash; contract-based, recession-resistant, and infinitely scalable</div>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f50d;</span> The Opportunity</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">US Market Size</div>
+          <div class="value">~$112B</div>
+          <div class="detail">The single largest segment of the facility services industry, growing ~2.7% CAGR (IBISWorld 2026). Revenue expected to rise 1.8% in 2026.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Fragmentation</div>
+          <div class="value">~1M firms</div>
+          <div class="detail">Over 90% have fewer than 10 employees. No single company controls more than ~5% of the market. New entrants flooded in post-pandemic.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">PE Penetration</div>
+          <div class="value">Low at Sub-$10M</div>
+          <div class="detail">PE rising but moderate: Imperial Dade (Advent), BradyIFS (Kelso), 4M Building Services (O2), Kleen-Tech (Rainier, Sept 2025). Below $10M, virtually absent.</div>
+        </div>
+      </div>
+      <p><strong>Why commercial janitorial and not residential cleaning?</strong> Commercial contracts are stickier (12&ndash;36 month terms), larger (average $3K&ndash;$15K/month per building), and scalable without the scheduling chaos of individual homeowners. Residential cleaning has been partially disrupted by gig platforms; commercial janitorial has not. The work is performed after business hours, reducing customer interaction friction.</p>
+      <p><strong>The AI moat:</strong> Someone must physically mop floors, clean restrooms, empty trash, and sanitize surfaces. Robotic floor cleaners exist but handle only flat, open surfaces&mdash;they cannot clean bathrooms, offices, stairwells, or irregular spaces. A human workforce is non-negotiable for at least the next 15&ndash;20 years.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4cd;</span> Target Geography &amp; End-Market</h3>
+      <p><strong>Ideal first market:</strong> Mid-size metros with significant office, medical, and industrial space. <strong>Columbus, OH</strong>, <strong>Indianapolis, IN</strong>, <strong>Jacksonville, FL</strong>, <strong>Salt Lake City, UT</strong>, or <strong>Oklahoma City, OK</strong> offer affordable cost structures, growing commercial real estate markets, and manageable competition.</p>
+      <p><strong>Customer mix:</strong> 100% commercial. Target Class B and C office buildings, medical/dental offices, industrial facilities, schools, and retail centers. Avoid competing for Class A towers where national firms have locked-in relationships.</p>
+      <ul>
+        <li><strong>Contract structure:</strong> Monthly service agreements, typically 12&ndash;36 months. Nightly cleaning 3&ndash;7x/week depending on facility. Average contract: $3,000&ndash;$12,000/month.</li>
+        <li><strong>Retention rates:</strong> 85&ndash;92% annual retention on well-serviced accounts. Client switching costs are moderate (retraining staff, security clearances).</li>
+        <li><strong>Upsell opportunities:</strong> Floor stripping/waxing, carpet cleaning, window washing, post-construction cleanup, disinfection services. These project-based add-ons carry 40&ndash;50% margins.</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4cb;</span> Acquisition Playbook</h3>
+      <ul>
+        <li><strong>Revenue:</strong> $1M&ndash;$3M with 15+ active contracts</li>
+        <li><strong>EBITDA margin:</strong> 8&ndash;15% (lower than pest control due to labor intensity; improves with scale)</li>
+        <li><strong>Owner situation:</strong> Solo owner-operators or husband/wife teams who are the primary salesperson and quality inspector. These businesses collapse without the owner, creating acquisition opportunities at reasonable multiples.</li>
+        <li><strong>Employee count:</strong> 20&ndash;60 cleaners (many part-time), 1&ndash;2 supervisors</li>
+      </ul>
+      <p><strong>Purchase multiples:</strong> 2.5&ndash;4.0x EBITDA. This is one of the lowest-multiple sectors in all of small business M&A due to perceived labor risk and low barriers to entry. However, operators who professionalize and build density can expand multiples significantly on exit.</p>
+
+      <table class="econ-table">
+        <tr><th>Deal Component</th><th>Typical Terms</th></tr>
+        <tr><td>SBA 7(a) Loan</td><td>Up to $5M. Same terms as above. SBA lenders are very comfortable with janitorial businesses due to recurring revenue.</td></tr>
+        <tr><td>Seller Financing</td><td>15&ndash;30% of purchase price. 3&ndash;5 year term. Often includes a customer retention earnout over 12 months.</td></tr>
+        <tr><td>Equity Required</td><td>$100K&ndash;$300K for a $1M&ndash;$2M revenue platform. This is the most capital-efficient niche to enter.</td></tr>
+      </table>
+      <p><strong>Note on SBA changes (June 2025):</strong> New SBA rules require collateral for nearly all loans above $50K. Seller notes can now only cover 50% of the required buyer equity injection (effectively ~5% of transaction value) and must remain on full standby for the entire SBA loan term. This has reduced seller willingness to offer financing alongside SBA&mdash;factor this into deal structuring. ~60% of small business acquisitions still include seller financing, but compatibility with SBA has tightened significantly.</p>
+      <p><strong>Sourcing:</strong> BSCAI (Building Service Contractors Association International) membership lists, BizBuySell, local commercial real estate brokers (who know which cleaning companies service their buildings), and direct outreach via LinkedIn to janitorial company owners.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4c8;</span> Path to Scale</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-2)">Year 1 &mdash; Acquire &amp; Systematize</div>
+          <p>Close platform deal ($1.5&ndash;$2.5M revenue). Install quality inspection software (Swept, CleanTelligent, or Janitorial Manager). Implement GPS clock-in/clock-out for all staff. Standardize supply procurement. Learn the business from the inside&mdash;you should be doing walk-through inspections yourself.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-2)">Year 2 &mdash; Grow Contracts + First Tuck-in</div>
+          <p>Aggressive commercial sales effort targeting property managers and facility directors. Complete 1&ndash;2 tuck-in acquisitions to absorb their contract books. Revenue target: $5&ndash;$7M. Hire an operations manager and begin the transition from owner-operator to owner-manager.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-2)">Year 3 &mdash; Margin Expansion</div>
+          <p>Revenue: $8&ndash;$11M. Margins start expanding as overhead gets leveraged across a larger revenue base. Centralize HR, payroll, and supply chain. Introduce tiered service packages (basic, premium, medical-grade). Begin winning larger accounts ($10K+/month).</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-2)">Year 4&ndash;5 &mdash; Regional Platform</div>
+          <p>Expand to 2&ndash;3 metros. Revenue: $15&ndash;$22M. EBITDA: $2&ndash;$3.5M. At this scale, you're attractive to PE platforms, national facility services companies (ABM, Marsden, C&amp;W Services), or could pursue a franchise model.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4b0;</span> Economics</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">Gross Margin</div>
+          <div class="value">35&ndash;45%</div>
+          <div class="detail">Labor is 55&ndash;65% of revenue (largest cost); supplies are 5&ndash;8%</div>
+        </div>
+        <div class="info-card">
+          <div class="label">EBITDA Margin (at scale)</div>
+          <div class="value">12&ndash;18%</div>
+          <div class="detail">Single-location operators run 8&ndash;12%; multi-market platforms with centralized back-office reach 15&ndash;18%</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Revenue per Employee</div>
+          <div class="value">$35K&ndash;$55K</div>
+          <div class="detail">Lower per-employee revenue than other niches, but offset by sheer scalability and low CapEx</div>
+        </div>
+      </div>
+      <p><strong>Return profile:</strong> Entry at 2.5&ndash;3.5x EBITDA, exit at 6&ndash;8x EBITDA. The multiple expansion is dramatic because institutional buyers pay a significant premium for scale, recurring contracts, and operational systems. Estimated IRR: 40&ndash;55%. Equity multiple: 6&ndash;12x.</p>
+      <p><strong>Exit buyers:</strong> National facility services companies (ABM Industries, Marsden Holding, Pritchard Industries), PE-backed platforms rolling up the space, or strategic acquirers entering a new metro.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x26a1;</span> What Makes or Breaks It</h3>
+      <div class="callout callout-green">
+        <h4>Must Get Right</h4>
+        <ul>
+          <li><strong>Labor management:</strong> This is fundamentally a workforce management business. High turnover (70&ndash;100%+ annually in the industry) is the norm. You win by being the employer of choice: reliable hours, competitive pay ($14&ndash;$18/hr), clear advancement paths, and respectful management.</li>
+          <li><strong>Quality control systems:</strong> Implement nightly digital inspection checklists with photo documentation. A single quality failure can lose a $100K+ annual contract.</li>
+          <li><strong>Bidding discipline:</strong> The #1 killer of janitorial companies is underbidding to win contracts. Build a bottoms-up labor-hour model for every bid. Never win a contract at negative unit economics.</li>
+        </ul>
+      </div>
+      <div class="callout callout-red">
+        <h4>Biggest Risks &amp; Mitigations</h4>
+        <ul>
+          <li><strong>Labor availability:</strong> Tight labor markets in some metros make staffing difficult. Mitigation: Build relationships with immigrant community organizations, offer transportation assistance, and provide consistent scheduling.</li>
+          <li><strong>Wage compression:</strong> Minimum wage increases can squeeze margins. Mitigation: Build annual escalators (2&ndash;4%) into every contract and avoid fixed-price long-term agreements without CPI adjustments.</li>
+          <li><strong>Key account loss:</strong> Losing a large contract can be devastating to a small operator. Mitigation: No single account should exceed 15% of revenue. Diversify across building types (office, medical, industrial).</li>
+        </ul>
+      </div>
+      <div class="callout callout-blue">
+        <h4>AI as Margin Enhancer</h4>
+        <ul>
+          <li><strong>Workforce scheduling algorithms</strong> can reduce overstaffing by 10&ndash;15% while maintaining service quality.</li>
+          <li><strong>IoT sensors</strong> (bathroom traffic counters, trash bin sensors) enable responsive cleaning rather than fixed schedules, reducing total labor hours.</li>
+          <li><strong>AI-powered quality inspection</strong> via smartphone photos can flag issues before client walk-throughs, reducing complaint-driven service failures.</li>
+          <li><strong>Automated bid calculation</strong> tools reduce proposal time from days to hours and improve pricing accuracy.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════ NICHE 3: POOL SERVICE ═══════════════════════ -->
+  <section id="niche3" class="niche-3">
+    <div class="niche-header">
+      <div class="niche-number">Niche 03</div>
+      <h2>Pool Service &amp; Maintenance</h2>
+      <div class="tagline">Sun Belt gold &mdash; hyper-local, deeply recurring, and barely touched by institutional capital</div>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f50d;</span> The Opportunity</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">US Market Size</div>
+          <div class="value">~$8.8B</div>
+          <div class="detail">Maintenance/service segment, growing at 4.2% CAGR (IBISWorld 2025). Projected to reach $10.3B by 2029.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Fragmentation</div>
+          <div class="value">~78,800 firms</div>
+          <div class="detail">Up 4.4% from 2024. Overwhelmingly sole proprietors and 2&ndash;5 person operations. No company holds &gt;5% market share.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">PE Penetration</div>
+          <div class="value">Moderate &amp; Rising Fast</div>
+          <div class="detail">SPS PoolCare (Storr Group) has made 191 acquisitions since 2021 and merged with Pool Troopers (Jan 2026). Trivest acquired Yummy Pools (2024). ASP (Authority Brands/Apax) has 380+ franchise units. Interest has "exploded" but vast white space remains at sub-$3M.</div>
+        </div>
+      </div>
+      <p><strong>Why pool service and not pool construction or general outdoor services?</strong> Pool maintenance is the purest recurring revenue model in home services. Pool construction is project-based, capital-intensive, and cyclical. Pool service is weekly/bi-weekly, year-round in warm climates, and nearly impossible for homeowners to DIY (chemical balancing requires expertise and liability concerns keep people paying). The installed base of 5.7M+ in-ground residential pools in the US creates a permanent, growing demand base.</p>
+      <p><strong>Note on PE activity:</strong> This space is heating up fast. SPS PoolCare (backed by Storr Group) has made 191 acquisitions since its 2021 founding and merged with Pool Troopers in January 2026, creating the two largest US pool service providers. Trivest Partners acquired Yummy Pools in 2024. While this validates the thesis, it also means competition for deals is increasing&mdash;speed and relationships with local operators matter more than ever.</p>
+      <p><strong>The AI moat:</strong> A technician must physically test water chemistry, add chemicals, clean filters, inspect equipment, vacuum the pool, and identify mechanical issues. Robotic pool cleaners handle surface debris but cannot perform chemical management, equipment repair, or filter maintenance. The human is indispensable.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4cd;</span> Target Geography &amp; End-Market</h3>
+      <p><strong>Ideal first market:</strong> This is a Sun Belt-only play. Target metros with high pool density per capita: <strong>Phoenix/Scottsdale, AZ</strong> (highest pool density in the US), <strong>Tampa Bay, FL</strong>, <strong>Dallas/Fort Worth, TX</strong>, <strong>Austin, TX</strong>, <strong>Las Vegas, NV</strong>, or <strong>Orlando, FL</strong>. Year-round service in these markets eliminates seasonality.</p>
+      <p><strong>Customer mix:</strong> 80% residential, 20% commercial (HOA community pools, hotels, apartment complexes). Commercial pools carry higher contract values ($500&ndash;$2,000/month) and are excellent density builders.</p>
+      <ul>
+        <li><strong>Contract structure:</strong> Weekly service agreements, $125&ndash;$250/month residential. Annual contract values of $1,500&ndash;$3,000 per pool.</li>
+        <li><strong>Retention rates:</strong> 85&ndash;90%+ annual retention. Extremely sticky&mdash;customers rarely switch if the pool is clean and chemical levels are stable.</li>
+        <li><strong>Upsell services:</strong> Equipment repair/replacement (pumps, heaters, salt cells), acid washing, tile cleaning, green-to-clean rescues ($300&ndash;$800 each), and pool remodeling referrals.</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4cb;</span> Acquisition Playbook</h3>
+      <ul>
+        <li><strong>Revenue:</strong> $500K&ndash;$2M (pool service businesses skew smaller; you may need to acquire 2&ndash;3 simultaneously)</li>
+        <li><strong>EBITDA margin:</strong> 20&ndash;30% (pool service is inherently high-margin due to low material costs)</li>
+        <li><strong>Owner situation:</strong> Solo operators or 2&ndash;3 person crews. Many pool guys have been doing this for 20&ndash;30 years with zero interest in growth&mdash;perfect acquisition targets.</li>
+        <li><strong>Route size:</strong> 60&ndash;200+ weekly accounts per operator</li>
+      </ul>
+      <p><strong>Purchase multiples:</strong> Pool routes commonly trade on a per-account basis: $800&ndash;$1,500 per monthly residential account (roughly 8&ndash;12x monthly service revenue, or 2.5&ndash;4.0x EBITDA). Some brokers sell "route books" rather than formal businesses&mdash;this can simplify acquisitions.</p>
+
+      <table class="econ-table">
+        <tr><th>Deal Component</th><th>Typical Terms</th></tr>
+        <tr><td>Route Purchase</td><td>$800&ndash;$1,500 per residential account. A 150-account route at $1,000/account = $150K total.</td></tr>
+        <tr><td>SBA 7(a)</td><td>Available for established businesses (not bare route purchases). 10-year term.</td></tr>
+        <tr><td>Seller Financing</td><td>Very common. 20&ndash;50% of route value, paid over 12&ndash;24 months with 30&ndash;90 day account guarantee.</td></tr>
+        <tr><td>Account Guarantee</td><td>Standard: seller guarantees accounts for 30&ndash;90 days. Any lost accounts within this period are deducted from the purchase price.</td></tr>
+      </table>
+      <p><strong>Sourcing:</strong> Pool route brokers (National Pool Route Sales, Pool Route Pros, PoolBuyer.com), local pool supply stores (industry hubs), IPSSA (Independent Pool & Spa Service Association) chapter meetings, and direct outreach to CPO (Certified Pool Operator) license holders via state databases.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4c8;</span> Path to Scale</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-3)">Year 1 &mdash; Aggregate Routes</div>
+          <p>Acquire 2&ndash;3 pool routes totaling 300&ndash;500 accounts. Learn the service business firsthand by riding routes. Install pool service software (Skimmer, Pool Brain, or Service Autopilot). Standardize chemical protocols and service checklists. Revenue: $600K&ndash;$1.2M.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-3)">Year 2 &mdash; Brand &amp; Densify</div>
+          <p>Continue acquiring routes (target 800+ total accounts). Launch branded trucks, uniforms, and website. Begin equipment repair service to capture higher-margin work. Hire first office coordinator. Revenue: $2&ndash;$3.5M.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-3)">Year 3 &mdash; Professionalize</div>
+          <p>Build out repair/renovation division. 1,200+ accounts serviced weekly. Launch lead generation through Google LSA and Yelp. Hire operations manager. EBITDA margins: 22&ndash;28%. Revenue: $5&ndash;$7M.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-3)">Year 4&ndash;5 &mdash; Multi-Market Expansion</div>
+          <p>Enter 1&ndash;2 adjacent Sun Belt metros through acquisition. 2,500+ total accounts. Revenue: $12&ndash;$18M. EBITDA: $3&ndash;$5M. At this scale, franchise conversion is highly viable&mdash;ASP (America's Swimming Pool Co.) has proven the model. Exit to a strategic or PE buyer at 6&ndash;8x EBITDA.</p>
+        </div>
+      </div>
+      <p><strong>Franchise optionality:</strong> Pool service is one of the most franchise-friendly niches. ASP and Pool Scouts have built successful franchise systems. Converting your multi-market operation to a franchise makes sense once you have standardized systems, training programs, and a recognized brand in 3+ markets.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4b0;</span> Economics</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">Gross Margin</div>
+          <div class="value">55&ndash;65%</div>
+          <div class="detail">Chemicals cost $15&ndash;$30/pool/month; labor is the primary cost. Equipment repair gross margins reach 50&ndash;60%.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">EBITDA Margin (at scale)</div>
+          <div class="value">22&ndash;30%</div>
+          <div class="detail">Among the highest in all home services. Low CapEx (trucks + basic equipment), high recurring revenue.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Revenue per Technician</div>
+          <div class="value">$130K&ndash;$180K</div>
+          <div class="detail">A single tech servicing 80&ndash;100 accounts/week at $175/month avg generates $168K&ndash;$210K annually</div>
+        </div>
+      </div>
+      <p><strong>Capital efficiency:</strong> Total equity required through Year 5: $800K&ndash;$1.5M. This is one of the most capital-efficient roll-ups because individual route acquisitions are small ($50K&ndash;$200K each) and can be financed largely through seller notes.</p>
+      <p><strong>Return profile:</strong> Entry at per-account pricing (equivalent to 2.5&ndash;3.5x EBITDA), exit at 6&ndash;8x EBITDA. Estimated IRR: 50&ndash;70%. Equity multiple: 10&ndash;18x. The returns are exceptional because the entry cost is so low relative to the recurring cash flows.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x26a1;</span> What Makes or Breaks It</h3>
+      <div class="callout callout-green">
+        <h4>Must Get Right</h4>
+        <ul>
+          <li><strong>Account retention during transitions:</strong> When you buy a route, the existing customers know and trust the prior operator. You have a 60&ndash;90 day window to build trust or they'll find someone new. Personal introductions from the seller are essential.</li>
+          <li><strong>Chemical competency:</strong> Improper chemical treatment can damage pool surfaces (costing $5K&ndash;$30K to repair) or create health hazards. Standardized testing protocols and CPO certification for all techs is non-negotiable.</li>
+          <li><strong>Geographic density:</strong> Profitability is entirely about drive time. Acquire routes in tight geographic clusters. A tech should service 15&ndash;20 pools/day within a 10-mile radius.</li>
+        </ul>
+      </div>
+      <div class="callout callout-red">
+        <h4>Biggest Risks &amp; Mitigations</h4>
+        <ul>
+          <li><strong>Geographic concentration risk:</strong> Pool service only works in warm climates. A regulatory change (water restrictions during drought) or natural disaster (hurricane season) can impact operations. Mitigation: Diversify across multiple Sun Belt metros.</li>
+          <li><strong>Liability:</strong> Chemical mishandling, drowning incidents near serviced pools, and slip-and-fall claims. Mitigation: Robust GL insurance ($2M+ per occurrence), strict safety protocols, and CPO certification requirements.</li>
+          <li><strong>Scaling the workforce:</strong> Finding reliable pool technicians in competitive Sun Belt labor markets. Mitigation: Offer $18&ndash;$22/hr (above market), provide wrapped trucks (recruiting tool), and create apprenticeship programs.</li>
+        </ul>
+      </div>
+      <div class="callout callout-blue">
+        <h4>AI as Margin Enhancer</h4>
+        <ul>
+          <li><strong>Smart water chemistry sensors</strong> (pHin, Sutro) can provide real-time chemical readings, reducing the number of on-site chemical tests needed per visit.</li>
+          <li><strong>Route optimization</strong> is even more impactful here than in pest control because pool techs make 15&ndash;20 stops/day. A 10% efficiency gain adds 1&ndash;2 extra stops per day per tech.</li>
+          <li><strong>Automated customer communication</strong> (service completion notifications, before/after photos) reduces office admin workload and improves perceived service quality.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════ NICHE 4: COMMERCIAL LANDSCAPING ═══════════════════════ -->
+  <section id="niche4" class="niche-4">
+    <div class="niche-header">
+      <div class="niche-number">Niche 04</div>
+      <h2>Commercial Landscaping &amp; Grounds Maintenance</h2>
+      <div class="tagline">Large TAM, proven roll-up model, and the highest revenue ceiling of any niche here</div>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f50d;</span> The Opportunity</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">US Market Size</div>
+          <div class="value">~$130B</div>
+          <div class="detail">Total landscaping services market. Commercial maintenance (our focus) is ~$45B of this. 4&ndash;5% annual growth.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Fragmentation</div>
+          <div class="value">~650,000&ndash;693,000 firms</div>
+          <div class="detail">The most fragmented of all our niches. Typical business has 2&ndash;3 employees. Top 5 companies collectively hold only 8.6% market share. Average firm: ~$1M revenue, 7.6 employees.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">PE Penetration</div>
+          <div class="value">Low-Moderate (Growing)</div>
+          <div class="detail">BrightView (KKR-backed, 34 acquisitions) is the largest. Riverside Company acquired U.S. Lawns. EverSmith Brands expanding. PE wants $15&ndash;$20M platforms before entry&mdash;below $5M remains wide open.</div>
+        </div>
+      </div>
+      <p><strong>Why commercial landscaping and not residential lawn care?</strong> Commercial contracts are larger ($2K&ndash;$30K/month vs. $150&ndash;$300/month residential), more predictable (12&ndash;36 month terms), and provide higher route density (one HOA community = 50+ individual residential accounts). Residential lawn care is being disrupted by app-based services and is a race to the bottom on price. Commercial grounds maintenance requires reliability, insurance, and scale that creates real barriers.</p>
+      <p><strong>The AI moat:</strong> Mowing, edging, mulching, pruning, irrigation repair, and snow removal all require humans operating heavy equipment on variable terrain. Autonomous mowers work on flat, obstacle-free lawns but cannot navigate commercial properties with slopes, beds, signage, pedestrians, and parking lots. This is 15&ndash;20+ years away from meaningful automation.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4cd;</span> Target Geography &amp; End-Market</h3>
+      <p><strong>Ideal first market:</strong> Sun Belt metros with year-round growing seasons and robust commercial development. <strong>Atlanta, GA</strong>, <strong>Charlotte, NC</strong>, <strong>Dallas/Fort Worth, TX</strong>, <strong>Nashville, TN</strong>, or <strong>Orlando, FL</strong>. In northern markets, snow removal can offset seasonal revenue dips but adds equipment and operational complexity.</p>
+      <p><strong>Customer mix:</strong> 100% commercial. Target HOA communities (the single best customer type&mdash;large, recurring, multi-year contracts), office parks, retail centers, apartment complexes, and corporate campuses.</p>
+      <ul>
+        <li><strong>Contract structure:</strong> Annual or multi-year maintenance contracts. Monthly billing of $2,000&ndash;$30,000 depending on property size. Many include irrigation management, seasonal color rotations, and mulch applications.</li>
+        <li><strong>Retention rates:</strong> 80&ndash;88% for well-serviced accounts. Below industry leaders because price competition is intense and switching costs are moderate.</li>
+        <li><strong>Enhancement revenue:</strong> Design/build projects, hardscaping, tree work, irrigation installation, and holiday lighting can add 20&ndash;40% above base maintenance revenue at higher margins.</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4cb;</span> Acquisition Playbook</h3>
+      <ul>
+        <li><strong>Revenue:</strong> $1.5M&ndash;$4M (landscaping companies can be larger; look for businesses with a strong commercial contract base)</li>
+        <li><strong>EBITDA margin:</strong> 8&ndash;15% (lower than pest control/pool service due to equipment costs and seasonal labor fluctuation)</li>
+        <li><strong>Owner situation:</strong> Founder who grew the business from a truck-and-trailer operation and is now managing 20&ndash;60 employees but never professionalized. Minimal systems, manual scheduling, no CRM.</li>
+        <li><strong>Fleet:</strong> 5&ndash;15 trucks, mowers, trailers, and assorted equipment. Condition of fleet is a major diligence item.</li>
+      </ul>
+      <p><strong>Purchase multiples:</strong> 3.0&ndash;5.0x EBITDA. Companies with multi-year commercial contracts and modern equipment command the high end. Residential-heavy operators trade at 2.5&ndash;3.5x.</p>
+      <p><strong>Sourcing:</strong> NALP (National Association of Landscape Professionals) membership directory, local landscape industry trade shows, equipment dealer networks (they know who's looking to sell), and direct mail campaigns targeting business owners aged 55+.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4c8;</span> Path to Scale</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-4)">Year 1 &mdash; Platform Acquisition</div>
+          <p>Acquire a $2&ndash;$3M commercial landscaping company. Focus on retaining all existing contracts and crew leaders. Implement Aspire, LMN, or SingleOps for job costing and scheduling. Audit every contract for profitability&mdash;raise prices or drop unprofitable accounts (many small landscapers have legacy underpriced contracts). Revenue: $2&ndash;$3M.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-4)">Year 2 &mdash; Profitability + Growth</div>
+          <p>Optimize crew routing and job costing. Margins should improve 3&ndash;5pp from pricing adjustments and efficiency gains alone. Complete 1&ndash;2 tuck-in acquisitions of smaller operators ($500K&ndash;$1.5M). Consolidate equipment. Revenue: $5&ndash;$7M.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-4)">Year 3 &mdash; Enhancement Revenue</div>
+          <p>Build out design/build and enhancement division (higher margin). Win first $20K+/month contracts (large HOA communities, corporate campuses). Hire dedicated account managers. Revenue: $9&ndash;$12M. EBITDA margin: 12&ndash;16%.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-4)">Year 4&ndash;5 &mdash; Regional Scale</div>
+          <p>Enter adjacent metro through acquisition. Revenue: $15&ndash;$25M. EBITDA: $2.5&ndash;$4.5M. At this scale, the business is squarely in the acquisition target zone for BrightView, Yellowstone, or PE-backed platforms. Exit at 6&ndash;9x EBITDA.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4b0;</span> Economics</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">Gross Margin</div>
+          <div class="value">40&ndash;50%</div>
+          <div class="detail">Labor is 40&ndash;50% of revenue; equipment/fuel is 10&ndash;15%; materials 5&ndash;8%</div>
+        </div>
+        <div class="info-card">
+          <div class="label">EBITDA Margin (at scale)</div>
+          <div class="value">12&ndash;18%</div>
+          <div class="detail">Best operators with strong job costing and enhancement revenue reach 18%+. Industry average is 8&ndash;10%.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Revenue per Employee</div>
+          <div class="value">$55K&ndash;$80K</div>
+          <div class="detail">Higher than janitorial due to equipment leverage; crew-based model (3&ndash;4 person crews) drives productivity</div>
+        </div>
+      </div>
+      <p><strong>Capital requirements:</strong> This is the most capital-intensive niche due to equipment. Budget $200K&ndash;$400K for equipment maintenance and replacement annually at scale. Total equity through Year 5: $1.2M&ndash;$2.2M. Total debt (SBA + equipment financing): $4&ndash;$7M.</p>
+      <p><strong>Return profile:</strong> Entry at 3.5&ndash;4.5x EBITDA, exit at 6&ndash;9x EBITDA. IRR: 35&ndash;50%. Equity multiple: 5&ndash;10x. Returns are slightly lower than pest control or pool service due to higher capital intensity, but the absolute dollar outcome can be larger given the higher revenue ceiling.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x26a1;</span> What Makes or Breaks It</h3>
+      <div class="callout callout-green">
+        <h4>Must Get Right</h4>
+        <ul>
+          <li><strong>Job costing discipline:</strong> Most landscaping companies don't know which contracts are profitable. Implementing real-time labor tracking and job costing (Aspire or LMN) is transformative. You'll likely discover 10&ndash;20% of contracts are money-losers that can be repriced or shed.</li>
+          <li><strong>Crew leader development:</strong> Crew leaders are the backbone of the business. A great crew leader manages 3&ndash;4 laborers, maintains quality, and keeps clients happy. Invest in foreman training, Spanish/English bilingual communication tools, and competitive pay ($22&ndash;$28/hr for crew leaders).</li>
+          <li><strong>Contract mix management:</strong> Avoid over-reliance on low-margin mow-and-blow contracts. Push toward full-service maintenance agreements (mowing + irrigation + seasonal color + mulch + pruning) that are stickier and higher margin.</li>
+        </ul>
+      </div>
+      <div class="callout callout-red">
+        <h4>Biggest Risks &amp; Mitigations</h4>
+        <ul>
+          <li><strong>H-2B visa dependency:</strong> Many landscaping companies rely on seasonal H-2B workers. Visa cap uncertainty can create labor shortages. Mitigation: Build a year-round core crew of permanent employees; use H-2B as supplementary labor for peak season.</li>
+          <li><strong>Equipment CapEx:</strong> Trucks, mowers, and trailers depreciate and break down. Deferred maintenance in acquired businesses can create surprise CapEx needs. Mitigation: Thorough equipment audits pre-acquisition; build a maintenance schedule and replacement reserve.</li>
+          <li><strong>Seasonality (northern markets):</strong> Revenue can drop 40&ndash;60% in Q1 if snow removal isn't offered. Mitigation: Stick to Sun Belt for initial markets, or pair with snow/ice management contracts if going north.</li>
+        </ul>
+      </div>
+      <div class="callout callout-blue">
+        <h4>AI as Margin Enhancer</h4>
+        <ul>
+          <li><strong>GPS fleet tracking</strong> reduces unauthorized truck use, improves routing, and provides real-time crew location data for client inquiries.</li>
+          <li><strong>Drone-based property measurement</strong> cuts proposal time for new contracts from hours to minutes and improves bid accuracy.</li>
+          <li><strong>AI-powered irrigation management</strong> (smart controllers + weather data) reduces water waste and positions you as a sustainability-focused operator, which resonates with corporate and municipal clients.</li>
+          <li><strong>Automated crew scheduling</strong> tools balance crew assignments across properties to minimize overtime and maximize daily production.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════ NICHE 5: GARAGE DOORS ═══════════════════════ -->
+  <section id="niche5" class="niche-5">
+    <div class="niche-header">
+      <div class="niche-number">Niche 05</div>
+      <h2>Garage Door Installation &amp; Repair</h2>
+      <div class="tagline">Hidden gem with emergency-driven pricing power, high margins, and zero AI disruption risk</div>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f50d;</span> The Opportunity</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">US Market Size</div>
+          <div class="value">~$6B</div>
+          <div class="detail">Service, repair, and installation. Growing 3&ndash;4% annually driven by housing stock growth and aging garage door systems.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Fragmentation</div>
+          <div class="value">~15,000 firms</div>
+          <div class="detail">Highly fragmented. Most are 2&ndash;10 person operations. Precision Door Service (franchised) and Overhead Door Corp are the only national players.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">PE Penetration</div>
+          <div class="value">Very Low</div>
+          <div class="detail">Neighborly (a PE-backed franchise platform) does not have a garage door brand. Authority Brands doesn't either. The space is almost entirely un-institutionalized below $10M.</div>
+        </div>
+      </div>
+      <p><strong>Why garage doors and not general handyman or door/window services?</strong> Garage doors are a specialized, high-urgency service. When a spring breaks or an opener fails, the homeowner's car is literally trapped&mdash;creating emergency pricing power and same-day conversion rates above 80%. The work requires specific technical training (torsion springs are dangerous), creating a skill moat that general handymen can't easily cross. Parts have high markup potential (springs, openers, panels, weatherstripping), and the average ticket is $300&ndash;$700 for repairs and $1,200&ndash;$3,500 for replacements.</p>
+      <p><strong>The AI moat:</strong> A technician must physically inspect the door system, diagnose the issue (spring tension, track alignment, opener malfunction, panel damage), perform the repair with specialized tools, and test the system. Garage doors involve heavy mechanical components under extreme tension&mdash;there is zero automation pathway for this work.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4cd;</span> Target Geography &amp; End-Market</h3>
+      <p><strong>Ideal first market:</strong> Suburbs of major metros with high single-family home density and aging housing stock (15&ndash;30 year old homes = garage doors needing replacement). <strong>Houston, TX</strong>, <strong>Phoenix, AZ</strong>, <strong>Atlanta, GA</strong>, <strong>Denver, CO</strong>, or <strong>Minneapolis-St. Paul, MN</strong> (cold weather accelerates wear on garage door systems).</p>
+      <p><strong>Customer mix:</strong> 75% residential, 25% commercial (warehouses, fire stations, auto dealerships, loading docks). Commercial doors are larger, more complex, and carry higher price points ($3K&ndash;$15K per door).</p>
+      <ul>
+        <li><strong>Revenue model:</strong> Primarily project/emergency-based, NOT recurring. However, you can build recurring revenue through annual maintenance contracts (lubrication, safety inspections, tune-ups) at $99&ndash;$199/year. Top operators get 15&ndash;25% of revenue from maintenance plans.</li>
+        <li><strong>Average ticket:</strong> Repair: $300&ndash;$700. Full replacement: $1,200&ndash;$3,500 residential, $3,000&ndash;$15,000 commercial.</li>
+        <li><strong>Repeat rate:</strong> Homeowners need garage door service roughly every 7&ndash;10 years, but referral rates are high (neighborhood density effect&mdash;one job leads to 2&ndash;3 neighbors seeing your truck).</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4cb;</span> Acquisition Playbook</h3>
+      <ul>
+        <li><strong>Revenue:</strong> $1M&ndash;$3M (look for companies with a mix of repair, replacement, and new construction work)</li>
+        <li><strong>EBITDA margin:</strong> 15&ndash;25% (high margins driven by parts markup and emergency pricing)</li>
+        <li><strong>Owner situation:</strong> Skilled technician who built a business but manages it informally. Often no CRM, no website optimization, no marketing beyond Google listing and word-of-mouth.</li>
+        <li><strong>Employee count:</strong> 3&ndash;10 technicians, 1&ndash;2 office/dispatch staff</li>
+      </ul>
+      <p><strong>Purchase multiples:</strong> 3.0&ndash;4.5x EBITDA. Businesses with strong Google reviews (100+), modern fleet, and diversified revenue (repair + replacement + commercial) command the high end.</p>
+      <p><strong>Sourcing:</strong> IDA (International Door Association) membership lists, business brokers specializing in home services, garage door distributor networks (Clopay, Amarr, Wayne Dalton reps know all the local installers), and Google Maps prospecting (search for garage door companies in target markets and reach out to owners of established but poorly marketed businesses).</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4c8;</span> Path to Scale</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-5)">Year 1 &mdash; Acquire &amp; Professionalize</div>
+          <p>Close platform acquisition. Immediately invest in digital marketing (Google LSA, local SEO, review generation). Install ServiceTitan or Housecall Pro for dispatch, invoicing, and CRM. Implement flat-rate pricing book (eliminates tech-by-tech pricing inconsistency). Launch maintenance plan offering. Revenue: $1.5&ndash;$2.5M.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-5)">Year 2 &mdash; Marketing-Driven Growth + Tuck-in</div>
+          <p>Aggressive paid search and LSA spend to dominate local search results. Complete 1&ndash;2 tuck-in acquisitions. Revenue should grow 30&ndash;50% from marketing alone in an under-marketed business. Hire first dedicated dispatcher. Revenue: $3.5&ndash;$5M.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-5)">Year 3 &mdash; Build the Brand</div>
+          <p>Wrapped fleet, branded uniforms, professional website with online booking. Launch commercial division targeting property managers and builders. Train techs on upselling (repair → replacement, basic opener → smart opener). Revenue: $6&ndash;$9M. EBITDA margin: 18&ndash;24%.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="year-label" style="color:var(--accent-5)">Year 4&ndash;5 &mdash; Expand Geography</div>
+          <p>Enter 1&ndash;2 new metros through acquisition. Revenue: $12&ndash;$18M. EBITDA: $2.5&ndash;$4M. The business is now a credible regional platform. Exit options include sale to a PE-backed home services platform (Neighborly, Authority Brands, Home Franchise Concepts), a strategic acquirer, or franchise conversion.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x1f4b0;</span> Economics</h3>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="label">Gross Margin</div>
+          <div class="value">50&ndash;60%</div>
+          <div class="detail">Parts cost 20&ndash;30% of revenue (with 2&ndash;3x markup to customer); tech labor is 20&ndash;25%</div>
+        </div>
+        <div class="info-card">
+          <div class="label">EBITDA Margin (at scale)</div>
+          <div class="value">18&ndash;26%</div>
+          <div class="detail">Marketing spend is the main variable cost (8&ndash;12% of revenue for lead generation). Tight operations can push above 24%.</div>
+        </div>
+        <div class="info-card">
+          <div class="label">Revenue per Technician</div>
+          <div class="value">$200K&ndash;$300K</div>
+          <div class="detail">Highest per-tech revenue of any niche here due to high average ticket and emergency premiums</div>
+        </div>
+      </div>
+      <p><strong>Return profile:</strong> Entry at 3.0&ndash;4.0x EBITDA, exit at 7&ndash;9x EBITDA. Estimated IRR: 45&ndash;60%. Equity multiple: 8&ndash;14x. The combination of high margins, low CapEx, and marketing-driven growth creates excellent returns for operators who can professionalize these businesses.</p>
+      <p><strong>Exit buyers:</strong> PE-backed home services platforms (Neighborly, Authority Brands, Ace Hardware Home Services), regional home services operators looking to add a vertical, or a franchise company looking to acquire an existing operating platform rather than build from scratch.</p>
+    </div>
+
+    <div class="subsection">
+      <h3><span class="icon">&#x26a1;</span> What Makes or Breaks It</h3>
+      <div class="callout callout-green">
+        <h4>Must Get Right</h4>
+        <ul>
+          <li><strong>Digital marketing dominance:</strong> Unlike the other niches, garage door is largely search-driven (emergency need → Google search → call → same-day service). Winning on Google LSA and local SEO is the #1 growth lever. Budget 10&ndash;12% of revenue to marketing and expect 5&ndash;8x ROI on ad spend.</li>
+          <li><strong>Flat-rate pricing and upsell training:</strong> The difference between a $350 repair ticket and a $1,200 replacement ticket is often a well-trained technician who can explain the cost/benefit of replacement vs. repair. Implement a flat-rate pricing book and invest in consultative sales training for every tech.</li>
+          <li><strong>Speed of response:</strong> In emergency-driven businesses, the company that answers the phone first and arrives fastest wins the job. Target &lt;60 second phone answer times and &lt;2 hour arrival windows for emergency calls.</li>
+        </ul>
+      </div>
+      <div class="callout callout-red">
+        <h4>Biggest Risks &amp; Mitigations</h4>
+        <ul>
+          <li><strong>Lead cost inflation:</strong> Google advertising costs in home services have increased 10&ndash;15% annually. Mitigation: Build organic SEO, invest in review generation (200+ Google reviews creates a durable moat), and develop referral programs with real estate agents and property managers.</li>
+          <li><strong>Safety incidents:</strong> Torsion spring work is genuinely dangerous. An improperly installed spring can cause serious injury or death. Mitigation: Rigorous safety training, insurance ($2M+ GL), and never allow untrained techs to perform spring work.</li>
+          <li><strong>Reputation risk:</strong> In a Google-review-driven business, a string of 1-star reviews can devastate call volume. Mitigation: Implement post-service follow-up calls, proactive review solicitation from happy customers, and rapid response protocols for complaints.</li>
+        </ul>
+      </div>
+      <div class="callout callout-blue">
+        <h4>AI as Margin Enhancer</h4>
+        <ul>
+          <li><strong>AI-powered call handling</strong> (ServiceTitan's Titan Intelligence, or third-party AI answering services) ensures no call goes unanswered, even at 2 AM. Can increase booking rate by 15&ndash;25%.</li>
+          <li><strong>Photo-based diagnostic tools</strong> where customers upload a photo of their door issue and AI provides a preliminary diagnosis and quote, reducing the need for non-billable diagnostic visits.</li>
+          <li><strong>Dynamic pricing algorithms</strong> that adjust emergency premiums based on demand, time of day, and technician availability&mdash;similar to ride-sharing surge pricing but less aggressive.</li>
+          <li><strong>Predictive maintenance outreach</strong> based on installation date, local weather patterns, and usage data to convert one-time customers into recurring maintenance plan subscribers.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════════════ CLOSING ═══════════════════════ -->
+  <section style="padding: 48px 0 64px;">
+    <h2 class="section-title">Closing Perspective</h2>
+    <div class="callout callout-yellow">
+      <h4>The Unifying Thesis</h4>
+      <p style="margin-bottom:12px;">All five niches share a common playbook: buy fragmented, owner-dependent businesses at 3&ndash;4.5x EBITDA, professionalize operations through technology and systems, build density through tuck-in acquisitions, and exit at 7&ndash;9x EBITDA to a larger platform or strategic buyer. The multiple arbitrage alone creates compelling returns, but the real value creation comes from operational improvement&mdash;turning a collection of "guy with a truck" businesses into a branded, professionally managed regional platform.</p>
+      <p style="margin-bottom:12px;"><strong>For a group of 25-year-old PE professionals:</strong> Your finance training gives you an edge in deal structuring, diligence, and capital efficiency that most small business acquirers lack. Your gap is operational&mdash;you've never managed technicians, dispatched crews, or dealt with a customer complaint at 6 AM. Plan to be deeply hands-on for 18&ndash;24 months. Your competitive advantage kicks in at Year 2&ndash;3 when most owner-operators plateau and you have the skills to keep compounding.</p>
+      <p><strong>One niche recommendation:</strong> If forced to choose one, <strong>pest control</strong> offers the best risk-adjusted combination of recurring revenue, margins, AI resistance, manageable operational complexity, and proven exit pathways. But the right answer depends on your specific market, personal interests, and deal flow.</p>
+    </div>
+
+    <div class="info-grid" style="margin-top:24px;">
+      <div class="info-card" style="border-left: 3px solid var(--accent-1);">
+        <div class="label">Best for Recurring Revenue</div>
+        <div class="value" style="font-size:18px; color:var(--accent-1);">Pest Control</div>
+        <div class="detail">80&ndash;85% recurring mix with quarterly service model</div>
+      </div>
+      <div class="info-card" style="border-left: 3px solid var(--accent-2);">
+        <div class="label">Fastest to $15M Revenue</div>
+        <div class="value" style="font-size:18px; color:var(--accent-2);">Commercial Janitorial</div>
+        <div class="detail">Large contracts accelerate top-line growth; achievable in 3&ndash;4 years</div>
+      </div>
+      <div class="info-card" style="border-left: 3px solid var(--accent-3);">
+        <div class="label">Most Capital Efficient</div>
+        <div class="value" style="font-size:18px; color:var(--accent-3);">Pool Service</div>
+        <div class="detail">Route acquisitions at $800&ndash;$1,500/account; highest IRR potential</div>
+      </div>
+      <div class="info-card" style="border-left: 3px solid var(--accent-4);">
+        <div class="label">Highest Revenue Ceiling</div>
+        <div class="value" style="font-size:18px; color:var(--accent-4);">Commercial Landscaping</div>
+        <div class="detail">$130B TAM with proven PE exits (BrightView, Yellowstone)</div>
+      </div>
+      <div class="info-card" style="border-left: 3px solid var(--accent-5);">
+        <div class="label">Best Margin Profile</div>
+        <div class="value" style="font-size:18px; color:var(--accent-5);">Garage Door Services</div>
+        <div class="detail">$200K&ndash;$300K revenue per tech; emergency pricing power</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>Prepared March 2026 &mdash; For Discussion Purposes Only &mdash; Not Investment Advice</p>
+  <p style="margin-top:8px;">Market data reflects publicly available estimates and industry reports. All projections are illustrative and subject to actual deal terms, market conditions, and execution risk.</p>
+</footer>
+
+</body>
+</html>
