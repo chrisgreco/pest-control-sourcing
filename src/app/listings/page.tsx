@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { listings } from "@/lib/mock-data";
 import { Listing } from "@/lib/types";
+import { fmtDollar } from "@/lib/format";
 import {
   Search,
   SlidersHorizontal,
@@ -77,9 +78,10 @@ export default function ListingsPage() {
         <FilterSelect label="Source" value={sourceFilter} onChange={setSourceFilter} options={[
           { value: "all", label: "All Sources" },
           { value: "bizbuysell", label: "BizBuySell" },
-          { value: "transworld", label: "Transworld" },
-          { value: "sunbelt", label: "Sunbelt" },
+          { value: "dealstream", label: "DealStream" },
           { value: "loopnet", label: "LoopNet" },
+          { value: "bizquest", label: "BizQuest" },
+          { value: "hedgestone", label: "HedgeStone" },
         ]} />
         <FilterSelect label="Status" value={statusFilter} onChange={setStatusFilter} options={[
           { value: "all", label: "All Statuses" },
@@ -149,10 +151,10 @@ export default function ListingsPage() {
                       <SourceBadge source={deal.source} />
                     </td>
                     <td className="py-3 px-4 text-right font-mono">
-                      ${(deal.revenue / 1_000_000).toFixed(2)}M
+                      {fmtDollar(deal.revenue)}
                     </td>
                     <td className="py-3 px-4 text-right font-mono">
-                      ${(deal.askingPrice / 1_000_000).toFixed(2)}M
+                      {fmtDollar(deal.askingPrice)}
                     </td>
                     <td className="py-3 px-4 text-right font-mono">
                       {deal.revenueMultiple.toFixed(2)}x
@@ -219,7 +221,7 @@ function DealDetail({ deal }: { deal: Listing }) {
         <div className="space-y-2 text-sm">
           <Row icon={<Calendar className="w-3 h-3" />} label="Established" value={deal.yearEstablished.toString()} />
           <Row icon={<Users className="w-3 h-3" />} label="Employees" value={deal.employees.toString()} />
-          <Row icon={<RefreshCw className="w-3 h-3" />} label="Cash Flow" value={`$${(deal.cashFlow / 1000).toFixed(0)}K`} />
+          <Row icon={<RefreshCw className="w-3 h-3" />} label="Cash Flow" value={fmtDollar(deal.cashFlow)} />
           <Row icon={<MapPin className="w-3 h-3" />} label="State" value={deal.state} />
           <Row icon={<ExternalLink className="w-3 h-3" />} label="Found" value={deal.dateFound} />
         </div>
@@ -295,7 +297,7 @@ function StatusBadge({ status }: { status: string }) {
 }
 
 function SourceBadge({ source }: { source: string }) {
-  const labels: Record<string, string> = { bizbuysell: "BizBuySell", transworld: "Transworld", sunbelt: "Sunbelt", loopnet: "LoopNet", direct: "Direct" };
+  const labels: Record<string, string> = { bizbuysell: "BizBuySell", dealstream: "DealStream", loopnet: "LoopNet", bizquest: "BizQuest", hedgestone: "HedgeStone", sunbelt: "Sunbelt", transworld: "Transworld", direct: "Direct" };
   return <span className="text-xs text-[var(--muted)]">{labels[source] || source}</span>;
 }
 

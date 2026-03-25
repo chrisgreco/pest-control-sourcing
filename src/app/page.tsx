@@ -1,6 +1,7 @@
 "use client";
 
 import { listings, offMarketLeads } from "@/lib/mock-data";
+import { fmtDollar } from "@/lib/format";
 import {
   DollarSign,
   TrendingUp,
@@ -268,10 +269,10 @@ export default function Dashboard() {
                     {deal.location}
                   </td>
                   <td className="py-3 px-3 text-right">
-                    ${(deal.revenue / 1_000_000).toFixed(2)}M
+                    {fmtDollar(deal.revenue)}
                   </td>
                   <td className="py-3 px-3 text-right">
-                    ${(deal.askingPrice / 1_000_000).toFixed(2)}M
+                    {fmtDollar(deal.askingPrice)}
                   </td>
                   <td className="py-3 px-3 text-right">
                     {deal.multiple.toFixed(1)}x

@@ -65,9 +65,10 @@ export default function IntelligencePage() {
   // Source distribution
   const sourceData = [
     { name: "BizBuySell", value: listings.filter((l) => l.source === "bizbuysell").length },
-    { name: "Transworld", value: listings.filter((l) => l.source === "transworld").length },
-    { name: "Sunbelt", value: listings.filter((l) => l.source === "sunbelt").length },
+    { name: "DealStream", value: listings.filter((l) => l.source === "dealstream").length },
+    { name: "HedgeStone", value: listings.filter((l) => l.source === "hedgestone").length },
     { name: "LoopNet", value: listings.filter((l) => l.source === "loopnet").length },
+    { name: "BizQuest", value: listings.filter((l) => l.source === "bizquest").length },
   ];
 
   // Radar chart for market scoring

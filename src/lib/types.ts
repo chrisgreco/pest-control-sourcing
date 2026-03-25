@@ -1,7 +1,7 @@
 export interface Listing {
   id: string;
   name: string;
-  source: "bizbuysell" | "transworld" | "sunbelt" | "loopnet" | "direct";
+  source: "bizbuysell" | "dealstream" | "loopnet" | "bizquest" | "hedgestone" | "sunbelt" | "transworld" | "direct";
   askingPrice: number;
   revenue: number;
   cashFlow: number; // SDE or EBITDA
